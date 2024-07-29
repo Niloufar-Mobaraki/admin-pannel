@@ -47,3 +47,43 @@ body {
     background-color: #f66436;
     transform: translateY(-1px);
 }
+
+.search-button {
+    border-radius:100% ;
+    padding: 10px 16px;
+    
+}
+
+
+.search-button :hover{
+    background-color: #eee;
+    transform: translateY(-10px);
+    
+}
+
+
+.search-input{
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #999;
+    transition: all 4s;
+}
+
+.search-input:focus{
+    border-bottom: 2px solid #dc3545;
+    background: transparent;
+    box-shadow: none;
+}
+@media  (max-width:768px){
+    .sidebar{position: static;
+    height: auto;}
+    .top-navbar{position: static;}
+    
+}
+
+
+.modal-direction{
+    transform: translateX(-300px);
+    
+}

@@ -21,12 +21,12 @@
 
 
     <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg navbar- light">
-        <button class="navbar-toggler mb-2 " data-toggle="collapse" data-target="#">
-            <span class="navbar-toggeler-icon"></span>
+     <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler mb-2 bg-light " data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse " id="mynav">
                 <div class="container-fluid">
                     <div class="row">
                         <!-- sidebar -->
@@ -82,10 +82,10 @@
                         <!-- End of sidebar -->
                         
                         <!--  topnav -->
-                          <div class="col-xl-10 col-lg-7 col-md-6 bg-dark mr-auto fixed-top py-2">
+                          <div class="col-xl-10 col-lg-7 col-md-8 bg-dark mr-auto fixed-top py-2 top-navbar">
                             <div class="row ">
-                              <div class="col-md-4 ">
-                                <h4 class="text-light">داشبورد</h4>
+                              <div class="col-md-4  ">
+                                <h4 class="text-light ">داشبورد</h4>
                               </div>
                               <div class="col-md-5">
                                 <form action="" class="my-3 my-md-0">
@@ -99,7 +99,7 @@
 
                               </div>
                               <div class="col-md-3">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav flex-row justify-content-between">
                                   <li class="nav-item">
                                     <a href="" class="nav-link">
                                    <i class="fas fa-comments fa-lg text-muted" aria-hidden="true"></i>
@@ -110,9 +110,9 @@
                                    <i class="fas fa-bell fa-lg text-muted" aria-hidden="true"></i>
                                     </a>
                                   </li>
-                                  <li class="nav-item mr-auto">
-                                    <a href="" class="nav-link">
-                                   <i class="fas fa-sign-out-alt fa-lg text-danger" aria-hidden="true"></i>
+                                  <li class="nav-item mr-md-auto">
+                                    <a href="#logoutModal" data-toggle="modal" class="nav-link">
+                                   <i class="fas fa-sign-out-alt fa-lg text-danger" aria-hidden="true" ></i>
                                     </a>
                                   </li>
                                 </ul>
@@ -124,6 +124,29 @@
 
 
                       <!-- End of topnav -->
+
+                      <!-- Modal -->
+                       <div class="Modal fade modal-direction " id="logoutModal">
+                        <div class="modal-dialog ">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                             <h4>آیا میخواهید خارج شوید؟</h4> 
+                            </div>
+                            <div class="modal-body ">
+                              <p class="text-muted"> در صورت خروج باید دوباره وارد شوید</p>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success" data-dismiss="modal">میمانم</button>
+                              <button class="btn btn-danger" >خارج میشوم</button>
+
+                             
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                      <!-- End Of Modal -->
+
 
                     </div>
                 </div>
